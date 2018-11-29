@@ -2917,9 +2917,9 @@ ember-compatibility-helpers@^1.2.0-beta.1:
     ember-cli-version-checker "^2.1.1"
     semver "^5.4.1"
 
-ember-data@^3.5.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/ember-data/-/ember-data-3.5.0.tgz#1cd22312112fd3a961248090eac850d513f844cf"
+ember-data@^3.5.1:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/ember-data/-/ember-data-3.5.1.tgz#cc8fc5cc5bc4f5e151fec772b13679a10cce0abc"
   dependencies:
     "@ember/ordered-set" "^2.0.0"
     babel-plugin-feature-flags "^0.3.1"
