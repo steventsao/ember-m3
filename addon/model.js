@@ -9,20 +9,13 @@ import { isArray } from '@ember/array';
 import { assert, warn } from '@ember/debug';
 import { alias } from '@ember/object/computed';
 import { IS_RECORD_DATA } from 'ember-compatibility-helpers';
+import { notifyPropertyChange } from '@ember/object';
 
 import { recordDataFor } from './-private';
 import M3RecordArray from './record-array';
 import { OWNER_KEY } from './util';
 import { resolveValue } from './resolve-attribute-util';
 import { computeAttributeReference, isResolvedValue as _isResolvedValue } from './utils/resolve';
-
-const { propertyDidChange } = Ember;
-let { notifyPropertyChange } = Ember;
-
-const HasNotifyPropertyChange = notifyPropertyChange !== undefined;
-if (!HasNotifyPropertyChange) {
-  notifyPropertyChange = propertyDidChange;
-}
 
 const {
   deleted: { uncommitted: deletedUncommitted, saved: deletedSaved },
